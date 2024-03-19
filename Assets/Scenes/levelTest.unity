@@ -713,6 +713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae7badf3a6d6de340b60e9b68c496af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  draggable: 0
+  hasTileIndicator: 0
+  tileIndicator: {fileID: 0}
 --- !u!1 &1620256989
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +795,7 @@ GameObject:
   - component: {fileID: 2057594105}
   - component: {fileID: 2057594104}
   m_Layer: 0
-  m_Name: Player
+  m_Name: GEM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,6 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9626f065e5fc5b848b9a0e58fac7b616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
   dragSpeed: 2
 --- !u!4 &2057594105
 Transform:

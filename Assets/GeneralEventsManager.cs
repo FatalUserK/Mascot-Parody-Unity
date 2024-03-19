@@ -4,12 +4,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class CameraController : MonoBehaviour
+public class GeneralEventsManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
     bool PlayerIsMovingCamera = false;
     GameObject cursor;
+
+    public GameObject selectedObject;
+
 
     void Start()
     {
@@ -40,8 +43,8 @@ public class CameraController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("MOUSE INPUT DETECTED, RUNNING MOUSE-INPUT HANDLER SCRIPT...");
-            StartCoroutine(CheckMouseInput(GetUnderCursor()));
+            //Debug.Log("MOUSE INPUT DETECTED, RUNNING MOUSE-INPUT HANDLER SCRIPT...");
+            //StartCoroutine(CheckMouseInput(GetUnderCursor()));
         }
     }
 
